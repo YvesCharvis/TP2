@@ -1,48 +1,35 @@
-#PDO - TP
-Pour tous les TP, il faudra respecter ces rÃ¨gles :
-- Respecter le modÃ¨le MVC
-- Nommer ses variables, fonctions, bases, tables et champs en anglais  
-- Soigner son CSS
-- Avoir un HTML valide
-- Chaque TP doit avoir son propore VHOST
-- Utiliser des classes serait un plus
-- Mettre des commentaires utiles
-
-
-
-
-##TP 1
-CrÃ©er un base avec une table permettant d'enregistrer un utilisateur. Un utilisateur est dÃ©fini comme tel :
-- Nom - 50 caractÃ¨res max
-- PrÃ©nom - 50 caractÃ¨res max
+##TP2
+Créer une base de données comportant 3 tables.  
+Table **client** : 
+- Nom - 50 caractères max
+- Prénom - 50 caractères max
 - Date de naissance - Date
 - Adresse - Texte
-- Code Postal - 5 caractÃ¨res max
-- NumÃ©ro de tÃ©lÃ©phone - 10 caractÃ¨res max
-- Service - entier
+- Code Postal - 5 caractères max
+- Numéro de téléphone - 10 caractères max
+- Statut marital - entier
 
-CrÃ©er une table Service :
-- Nom du service - 50 caractÃ¨res max
-- Description - 100 caractÃ¨res max
+Table **satut marital** :
+- Statut - 50 caractères max
 
-Remplir la table Service avec ces informations :
+Remplir la table Satut marital avec ces informations :
 
-Nom du service   |   Description
-------           |    ---
-Maintenance      |   Les spÃ©cialistes du Hardware
-Web Developer    |   Pour eux tout est code
-Web Designer     |   Y a que le CSS dans la vie
-RefÃ©renceur      |   Regarde les Serps Google du matin au soir et du soir au matin
+Statut   
+------           
+Célibataire      
+Concubinage    
+Divorcé     
+Marié
+Veuf
 
-Faire une page index permettant de lister les utilisateurs en affichant ces donnÃ©es :
-- Son nom et son prÃ©nom
-- Son Ã¢ge
-- Son adresse complÃ¨te
-- Son numÃ©ro de tÃ©lÃ©phone
-- Son service
+Table **crédit** :
+- Organisme - 50 caractères max
+- Montant - decimal
 
-Sur cette page on doit pouvoir filtrer les services via une liste dÃ©roulante et donc n'afficher que ceux choisi.  
-On doit aussi pourvoir supprimer un utilisateur via un bouton.  
+Créer 4 pages : 
+- Creation client : permettant de créer un client
+- Ajout credit : permettant d'ajouter un crédit
+- Liste client : permettant de lister les clients
+- Détail client : permettant d'afficher les infos clients (info perso, crédits)
 
-Faire une autre page permettant d'ajouter un utilisateur. On doit s'assurer que les donnÃ©es saisies par l'utilisateur sont celle attendues.  
-**Attention au piratage !!**
+**Un client peut avoir plusieurs crédits.**
