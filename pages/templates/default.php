@@ -7,10 +7,23 @@
     <meta name="description" content="">
     <meta name="author" content="">   
     						<!-- Bootstrap core CSS -->
-    	<link href="framworks/bootstrap.min.css" hrel="stylesheet">
+    	<link href="frameworks/bootstrap.min.css" type="text/css" rel="stylesheet">
     	<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 <body>
+
+
+
+<nav class="navbar">
+  <ul>
+    <li> <a href="index.php?p=home">Accueil</a></li>
+    <li> <a href="index.php?p=Clients">Liste des clients</a></li>
+    <li> <a href="index.php?p=Clients">Liste des clients</a></li>
+    <li> <a href="index.php?p=Clients">Liste des clients</a></li>
+  </ul>
+</nav>
+
+
 
               <!-- Appelle de pages/index.php => HOME -->
                       <?= $content; ?> 

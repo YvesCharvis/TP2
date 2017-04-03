@@ -21,8 +21,11 @@ if ($auth->logged()) {
 /////////////////////////
 
 ob_start();
-if ($page==='home') {  // Charge centre page (contente)
+if ($page==='home') {  // Charge centre page (content)
 	require ROOT.'/pages/index.php';
+
+}elseif ($page==='Clients') {
+	require ROOT.'/pages/clients/index.php';
 }elseif ($page==='login') {
 	require ROOT.'/pages/users/login.php';
 }elseif ($page==='Disconnect') {
