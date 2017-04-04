@@ -1,6 +1,6 @@
 <h1>Liste des clients</h1>
 
-<table>
+<table class="table">
 	<thead>
 		<tr>
 			<td>Nom</td>
