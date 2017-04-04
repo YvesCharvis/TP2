@@ -10,7 +10,7 @@ class App
 	private static $_instance;
 	private $db_instance;
 
-	public static function load() // donne l'accéé a toute les class
+	public static function load() // donne l'accès à toutes les classes
 	{
 		session_start();
 		require ROOT.'/app/Autoloader.php';
